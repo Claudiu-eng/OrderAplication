@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefViewportHeight="1467.0" prefViewportWidth="1217.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypack.controller.OrderPageController">
+   <content>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="1467.0" prefWidth="1238.0" style="-fx-background-color: #95A0A0;">
+         <children>
+            <Button id="sale" fx:id="addOrder" layoutX="83.0" layoutY="1138.0" mnemonicParsing="false" onAction="#addOrderOnEvent" prefHeight="69.0" prefWidth="189.0" stylesheets="@buttonsStyle.css" text="Order">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button id="sale" fx:id="deleteOrder" layoutX="83.0" layoutY="1231.0" mnemonicParsing="false" onAction="#deleteOrderEvent" prefHeight="69.0" prefWidth="189.0" stylesheets="@buttonsStyle.css" text="DeleteOrder">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button id="sale" fx:id="backBTN" layoutX="83.0" layoutY="1332.0" mnemonicParsing="false" onAction="#backBTNEvent" prefHeight="69.0" prefWidth="189.0" stylesheets="@buttonsStyle.css" text="Back">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <TableView fx:id="productsTable" layoutX="680.0" layoutY="173.0" prefHeight="565.0" prefWidth="492.0">
+               <columns>
+                  <TableColumn fx:id="id_product" prefWidth="127.0" text="id_product" />
+                  <TableColumn fx:id="nameProduct" prefWidth="103.0" text="name" />
+                  <TableColumn fx:id="stoc" prefWidth="129.0" text="stoc" />
+                  <TableColumn fx:id="price" prefWidth="132.0" text="price" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutY="-6.0" prefHeight="167.0" prefWidth="1217.0" style="-fx-background-color: #0F00A9;">
+               <children>
+                  <Label alignment="CENTER" layoutX="318.0" layoutY="49.0" prefHeight="69.0" prefWidth="574.0" text="Orders Page" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="49.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="clientsTable" layoutX="68.0" layoutY="173.0" prefHeight="563.0" prefWidth="492.0">
+               <columns>
+                  <TableColumn fx:id="id_client" prefWidth="110.0" text="id_client" />
+                  <TableColumn fx:id="nameClient" prefWidth="158.0" text="name" />
+                  <TableColumn fx:id="email" prefWidth="223.0" text="email" />
+               </columns>
+            </TableView>
+            <TableView fx:id="ordersTable" layoutX="680.0" layoutY="801.0" prefHeight="565.0" prefWidth="492.0">
+               <columns>
+                  <TableColumn fx:id="id_order" prefWidth="103.0" text="id_order" />
+                  <TableColumn fx:id="id_clientOrder" prefWidth="129.0" text="id_client" />
+                  <TableColumn fx:id="id_productOrder" prefWidth="127.0" text="id_product" />
+                  <TableColumn fx:id="cantity" prefWidth="132.0" text="cantity" />
+               </columns>
+            </TableView>
+            <Label layoutX="83.0" layoutY="932.0" prefHeight="43.0" prefWidth="130.0" text="CANTITY" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityTextField" layoutX="263.0" layoutY="935.0" prefHeight="37.0" prefWidth="189.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

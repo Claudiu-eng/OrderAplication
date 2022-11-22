@@ -1,0 +1,3 @@
+Paul Pogba a comandat 1 din mypack.model.Product@4cdddae1
+Paul Pogba a comandat 22 din Product{id_product=2, name='salam', stoc=78, price=11.0}
+Mircea Paul a comandat 11 din Product{id_product=1, name='Ciocolata Milka', stoc=0, price=2.0}

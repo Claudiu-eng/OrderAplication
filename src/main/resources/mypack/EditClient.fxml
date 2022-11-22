@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="599.0" style="-fx-background-color: #95A0A0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypack.controller.EditClientController">
+    <children>
+        <AnchorPane prefHeight="148.0" prefWidth="599.0" style="-fx-background-color: #0F00A9;">
+            <children>
+                <Label alignment="CENTER" layoutX="181.0" layoutY="48.0" prefHeight="48.0" prefWidth="211.0" text="Edit Client" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="oldNameTextField" editable="false" layoutX="137.0" layoutY="172.0" prefHeight="41.0" prefWidth="282.0" />
+        <Button id="sale" fx:id="edtiButton" layoutX="137.0" layoutY="520.0" mnemonicParsing="false" onAction="#editButtonOnAction" prefHeight="68.0" prefWidth="282.0" stylesheets="@buttonsStyle.css" text="Edit">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Button>
+        <Button id="sale" fx:id="backButton" layoutX="137.0" layoutY="600.0" mnemonicParsing="false" onAction="#backBTNEvent" prefHeight="68.0" prefWidth="282.0" stylesheets="@buttonsStyle.css" text="Back">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Button>
+        <TextField fx:id="newNameTextField" layoutX="137.0" layoutY="245.0" prefHeight="41.0" prefWidth="282.0" />
+        <TextField fx:id="oldEmailTextField" editable="false" layoutX="137.0" layoutY="325.0" prefHeight="41.0" prefWidth="282.0" />
+        <TextField fx:id="newEmailTextField" layoutX="137.0" layoutY="411.0" prefHeight="41.0" prefWidth="282.0" />
+        <Label layoutX="14.0" layoutY="181.0" prefHeight="24.0" prefWidth="81.0" text="old name" />
+        <Label layoutX="14.0" layoutY="254.0" prefHeight="24.0" prefWidth="81.0" text="new name" />
+        <Label layoutX="14.0" layoutY="334.0" prefHeight="24.0" prefWidth="81.0" text="old email" />
+        <Label layoutX="14.0" layoutY="411.0" prefHeight="24.0" prefWidth="81.0" text="email" />
+        <TextField fx:id="id" editable="false" layoutX="477.0" layoutY="622.0" prefHeight="41.0" prefWidth="108.0" />
+        <Label layoutX="477.0" layoutY="568.0" prefHeight="41.0" prefWidth="108.0" text="ID">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="messageFinal" layoutX="449.0" layoutY="532.0" prefHeight="41.0" prefWidth="138.0" />
+    </children>
+</AnchorPane>
